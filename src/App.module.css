@@ -1,0 +1,236 @@
+/** @format */
+
+.App {
+  /* border: 1px solid #fff; */
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+
+  .header {
+    width: 100%;
+    height: 5vw;
+  }
+  .main {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    .leftContainer {
+      /* border: 1px solid #fff; */
+      width: 80%;
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+      position: relative;
+      .one {
+        height: 44vw;
+        /* border: 3px solid red; */
+        gap: 3vw;
+        width: 75%;
+        margin-left: 5%;
+      }
+      .two {
+        /* border: 3px solid blue; */
+        gap: 1vw;
+        position: absolute;
+        top: 0;
+        /* left: 0; */
+        right: 2%;
+        bottom: 0;
+        height: 44vw;
+        width: 70%;
+      }
+      .one,
+      .two {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+
+        .singleContainer {
+          /* border: 1px solid #fff; */
+          position: relative;
+          .imgContainer {
+            width: 100%;
+            height: 100%;
+          }
+          .msgBox {
+            width: 100%;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            justify-content: flex-start;
+            gap: 0.5vw;
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            color: #fff;
+            /* border: 1px solid #fff; */
+            .name {
+              font-size: 1vw;
+              /* border: 1px solid #fff; */
+              font-weight: 600;
+              word-break: break-all;
+            }
+            .msg {
+              /* border: 1px solid #fff; */
+              font-size: 0.7vw;
+              font-weight: 0;
+              width: 90%;
+              word-break: break-all;
+            }
+          }
+        }
+      }
+      .emoji01 {
+        width: 4.5vw;
+        position: absolute;
+        top: 3%;
+        left: 12%;
+      }
+      .emoji02 {
+        width: 5vw;
+        position: absolute;
+        top: 5%;
+        left: 25%;
+      }
+      .emoji03 {
+        width: 4vw;
+        position: absolute;
+        top: 2%;
+        left: 60%;
+      }
+      .emoji04 {
+        width: 5vw;
+        position: absolute;
+        top: 5%;
+        right: 0;
+      }
+      .emoji05 {
+        width: 3vw;
+        position: absolute;
+        top: 45%;
+        left: 17%;
+      }
+      .emoji06 {
+        width: 4vw;
+        position: absolute;
+        right: 24%;
+        top: 40%;
+      }
+      .emoji07 {
+        width: 4.5vw;
+        position: absolute;
+        right: 4%;
+        top: 23%;
+      }
+      .emoji08 {
+        width: 5vw;
+        position: absolute;
+        bottom: 5%;
+        left: 22%;
+      }
+      .emoji09 {
+        width: 6vw;
+        position: absolute;
+        bottom: 20%;
+        right: 0;
+      }
+    }
+    .rightContainer {
+      /* border: 1px solid #fff; */
+      width: 20%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      .imgContainer {
+        width: 65%;
+      }
+    }
+  }
+}
+
+.leftOne,
+.leftTwo,
+.leftThree,
+.rightOne,
+.rightTwo,
+.rightThree,
+.rightFour,
+.rightFive,
+.rightSix {
+  width: 14vw;
+  .msgBox {
+    padding: 1.5vw;
+  }
+}
+.leftTwo {
+  margin-left: 5%;
+}
+.leftThree {
+  margin-right: 2%;
+}
+.leftFour {
+  width: 18vw;
+  .msgBox {
+    padding: 3.5vw;
+  }
+}
+
+.rightTwo {
+  margin-right: 10%;
+}
+.rightFive {
+  margin-left: 15%;
+}
+
+@keyframes popupScale {
+  0% {
+    transform: scale(0);
+    opacity: 0;
+  }
+  90% {
+    transform: scale(1.1);
+  }
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+.popupScaleEffect {
+  /* opacity: 0; */
+  animation: popupScale 2s ease-in-out infinite;
+}
+
+.hidden {
+  /* opacity: 0; */
+}
+
+.opacity {
+  opacity: 0;
+}
+
+.shakeAnimation {
+  /* opacity: 0; */
+  animation: shake 2s alternate;
+}
+
+@keyframes shake {
+  0% {
+    transform: scale(0);
+    opacity: 0;
+  }
+  50% {
+    transform: scale(1.25);
+    opacity: 1;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
