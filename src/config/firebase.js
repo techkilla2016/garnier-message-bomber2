@@ -3,12 +3,12 @@ import { getFirestore } from "firebase/firestore";
 import { getStorage } from "firebase/storage";
 
 const firebaseConfig = {
-  apiKey: "AIzaSyCkigqYk6okJt3jDPiufsHAjP4tFX-ZbaE",
-  authDomain: "garnier-message-wall.firebaseapp.com",
-  projectId: "garnier-message-wall",
-  storageBucket: "garnier-message-wall.appspot.com",
-  messagingSenderId: "990431025519",
-  appId: "1:990431025519:web:cea57d2735d4bf4bef709a"
+  apiKey: "AIzaSyAxFhHrhrcqQJeE3Ndhmmdd6VQuU_5wphQ",
+  authDomain: "garniermessagewall.firebaseapp.com",
+  projectId: "garniermessagewall",
+  storageBucket: "garniermessagewall.appspot.com",
+  messagingSenderId: "724936613987",
+  appId: "1:724936613987:web:f0aa121645a1f561019856"
 };
 
 const app = initializeApp(firebaseConfig);
