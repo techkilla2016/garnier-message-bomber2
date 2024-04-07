@@ -71,7 +71,7 @@ export default function App() {
       alldata.sort((a, b) => b.timeStamp - a.timeStamp);
       let newdata = alldata.slice(0, 10);
       newdata = newdata.map(item => ({ ...item, bool: false }));
-
+    
       newdata[0] = { ...newdata[0], bool: true };
       function shuffle(array) {
         for (let i = array.length - 1; i > 0; i--) {
@@ -80,7 +80,7 @@ export default function App() {
         }
       }
       shuffle(newdata);
-      console.log(newdata);
+      
       setMessagesList(newdata);
     });
 
